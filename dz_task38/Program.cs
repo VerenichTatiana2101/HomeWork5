@@ -18,7 +18,7 @@ double[] CreateArrayRndDouble(int size, int min, int max)
 
 double MaxNumber(double[] array)
 {
-    double max = 0;
+    double max = array[0];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > max) max = array[i];
@@ -52,7 +52,7 @@ void PrintArray(double[] arr)
     Console.Write("]");
 }
 
-double[] array = CreateArrayRndDouble(5, 1, 5);
+double[] array = CreateArrayRndDouble(5, -7, -1);
 PrintArray(array);
 Console.WriteLine();
 
